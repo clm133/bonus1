@@ -13,15 +13,20 @@
 			<!-- You'll handle the form with js, so no need for method and action -->
 			<form class="flexsearch-form" id="mainForm">
 				<div class="flexsearch-input-wrapper">
-					<input class="flexsearch-input" type="search" placeholder="search">
+					<input class="flexsearch-input" type="search" placeholder="search" id="currentSearch" oninput="getResults()">
 				</div>
-				<input class="flexsearch-submit" type="submit" value="&#10140;"/>
+				<input class="flexsearch-submit" type="submit" value="&#10140;">
 			</form>
 		</div>
 	</div>
+	<div class="container">
+		<h2 class="h2">Did You Mean?</h2>
+		<ul id="showResults">
+		</ul>
+	</div>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script src="bonus_one.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </body>
 </html>
